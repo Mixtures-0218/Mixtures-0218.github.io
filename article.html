@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles | Yiding Luo</title>
+    <title>Papers &amp; Articles | Yiding Luo</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
         .article-list {
@@ -162,7 +162,7 @@
 
         <!-- 语言切换 -->
         <div class="header">
-            <h1 class="text" data-zh="博客文章" data-en="Blog Articles">Blog Articles</h1>
+            <h1 class="text" data-zh="论文与文章" data-en="Papers & Articles">Papers &amp; Articles</h1>
             <p class="text" data-zh="探索气象科学与数据科学的前沿知识" data-en="Exploring the frontiers of meteorological and data sciences">Exploring the frontiers of meteorological and data sciences</p>
         </div>
 
@@ -242,6 +242,9 @@
                         if (a.type === 'pdf') {
                             // ENSO 论文：直接新标签页打开 PDF
                             window.open(a.pdf, '_blank');
+                        } else if (a.type === 'link') {
+                            // 外部链接（如 arXiv 论文）：新标签页打开
+                            window.open(a.url, '_blank', 'noopener,noreferrer');
                         } else {
                             selectArticle(a.id);
                         }

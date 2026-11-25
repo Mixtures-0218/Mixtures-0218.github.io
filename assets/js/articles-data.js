@@ -5,6 +5,21 @@
  */
 window.ARTICLES_DATA = [
   {
+    id: 'ml-tornado-arxiv',
+    icon: '📄',
+    title: {
+      zh: '机器学习天气模型在再现中尺度龙卷风有利对流环境中的评估',
+      en: 'Evaluation of Machine-Learning Weather Models in Reproducing Mesoscale Tornado-Favorable Convective Environments'
+    },
+    description: {
+      zh: '评估盘古天气、风乌与伏羲气象模型在10次俄克拉荷马强龙卷风对流事件中的8项龙卷风相关参数表现（arXiv 预印本）',
+      en: 'Evaluating Pangu-Weather, FengWu, and FuXi across 10 Oklahoma tornado-associated convective events and 8 tornado-relevant parameters (arXiv preprint)'
+    },
+    date: '2026-11-23',
+    type: 'link', // 新标签页打开外部链接
+    url: 'https://arxiv.org/abs/2611.31564'
+  },
+  {
     id: 'seattle-electricity',
     icon: '⚡️',
     title: {
@@ -64,42 +79,6 @@ window.ARTICLES_DATA = [
         { src: '文章/大气河.png', captionZh: '2023 年 12 月 5 日大气河事件卫星图片（图源 Windy.com）', captionEn: 'Satellite picture of an atmospheric river on 5 Dec. 2023 (From Windy.com)' },
         { src: '文章/大气河850hPa.png', captionZh: '2023 年 12 月 5 日大气河事件 850hPa 云中水汽含量（图源 EarthNullSchool）', captionEn: 'Cloud moisture on 850hPa of the atmospheric river on 5 Dec. 2023 (From EarthNullSchool)' },
         { src: '文章/OLYMPEX.png', captionZh: '奥林匹亚山项目示意图', captionEn: 'The OLYMPEX program' }
-      ]
-    },
-  },
-  {
-    id: 'weather-rumors',
-    icon: '🔍',
-    title: {
-      zh: '天气谣言破谣',
-      en: 'Weather Rumors'
-    },
-    description: {
-      zh: '对一则春节期间天气谣言的简要科学分析（2020 年春节）',
-      en: 'A brief scientific analysis of a weather rumor during the 2020 Spring Festival'
-    },
-    date: '2020-02-07',
-    type: 'text',
-    body: {
-      zh: [
-        '此文章是对以下谣言内容进行简要的科学分析并进行结论。',
-        '谣言内容：紧急通知：成都将在 1 月 25 日出现暴雪，整个春节将处于极度寒冷的天气中，比 2008 年还要冷！以下是天气预报：1 月 25 日，雨夹雪，-1~2℃；1 月 26 日，雨夹雪，-1~0℃；1 月 27 日，雨夹雪，-3~0℃；1 月 28 日，大雪，-5~0℃；1 月 29 日，阵雪，-6~0℃。',
-        '出现降水最普遍的原因有三，一是冷锋天气；二是暖锋天气；三是准静止锋。',
-        '冷锋分为急性冷锋和缓行冷锋。从上面谣言言论可见从 2020 年 1 月 25 日至 2020 年 2 月 1 日会出现为期 8 天的降水过程，如此之长的降水时间只有冷锋中的缓行冷锋（或称为第一型冷锋）也许可以做到，不过缓行冷锋所带来的降水强度不大，但从谣言言论上来看，在 1 月 28 日会出现大雪天气，大雪是指 5 至 10 毫米的降水量，属于强对流天气，缓行冷锋不可能出现强降水天气。再看温度，温度从 1 月 25 日开始出现了小幅度下降，这符合缓行冷锋过境时的气温变化。在 1 月 28 日以后会出现气温一直低迷的情况，这也符合冷锋过境后的温度状况，只不过这段时间谣言言论指出，这段时间内会出现强降水，并且强降水持续，这并不符合任何冷锋过境时的天气（缓行冷锋过境后会出现高云，急行冷锋过境后会出现晴朗的天气）。由此，我们可以判断出，如此之长的强降水过程和持续低迷的气温并不是冷锋能达到的。',
-        '之所以把暖锋天气考虑在内，是因为如谣言言论所述，2 月 1 日会出现一个很明显的升温过程，升温幅度（最高温）达到了 10 摄氏度，只有强劲的暖气团可以做到。如果是暖锋天气，在 2 月 1 日之前根据气温来看都处于冷气团控制下，是高压天气。但是在稳定的冷气团控制下（参考 1 月 28 日至 1 月 31 日的温度）怎么可能会出现强对流天气？并且持续时间非常长。这时，我们可以基本排除暖锋天气，并引出最有可能符合此天气类型的模型——准静止锋。',
-        '准静止锋是当冷锋和暖锋实力相当时所形成的移动缓慢而呈静止状态的锋。如果准静止锋的坡度大、地面辐合强，暖气团就会极力地上升形成连续性强降水天气，前提是暖气团需要携带足够的水汽。这貌似符合谣言言论所述的降水过程，但是，其中有一个最大的因素会影响其降水——地形。众所周知，成都属于盆地，冷空气到达成都需要翻过秦岭，但是由于冷空气密度大，下沉很快，到达成都平原的冷空气已经削弱了不少。而暖气团到达成都需要翻过云贵高原，其势力也被削弱。所以，在成都并不可能出现坡度大的准静止锋面去形成持续性的强降水。虽在贵阳等地容易形成准静止锋面，但其特点是坡度小，因而也不会形成长时间的强对流天气，反而更容易形成锋面逆温产生冻雨。',
-        '总而言之，从科学角度分析，此谣言漏洞百出，完全不可信。希望大家不信谣、不传谣！实时关注权威机构发布的天气动态。'
-      ],
-      en: [
-        'This article is a brief scientific analysis and conclusion of the following rumor.',
-        'Emergency Notice: A SNOWSTORM is expected in Chengdu on Jan 25th, and the entire Spring Festival will be under extremely cold weather, even colder than in 2008! Here is the forecast: Jan 25th, mixed rain and snow, -1~2℃; Jan 26th, mixed rain and snow, -1~0℃; Jan 27th, mixed rain and snow, -3~0℃; Jan 28th, heavy snow, -5~0℃; Jan 29th, snow shower, -6~0℃.',
-        'Precipitation is an essential element of the earth\'s water cycle, and its occurrence is influenced by various meteorological factors. In meteorology, precipitation is defined as any form of water that falls from the atmosphere and reaches the ground. The three common reasons for precipitation are cold front weather, warm front weather, and quasi-stationary fronts.',
-        'Cold fronts can be classified into acute and slow-moving types. In a cold front precipitation process, the long-lasting slow front is typical, whereas the slow-moving cold front brings about low-intensity precipitation. Heavy snow, which is categorized here as strong convective weather, is not possible during a slow-moving cold front. It is also worth noting that a cold front usually causes a decrease in temperature, which is consistent with the temperature change during the passage of a mild cold front. However, a long period of heavy precipitation and persistently low temperatures beyond the reach of a cold front may occur.',
-        'On the other hand, a warm front is characterized by a significant warming trend, which can only be caused by a strong warm air mass. If it is a warm front, it will be under the control of a cold air mass according to the temperature until a high-pressure weather occurs. However, under the control of a stable cold air mass, how can severe convection weather occur for a long time? The answer is: it is impossible.',
-        'Lastly, a quasi-stationary front is formed when a cold front and a warm front are equal in strength. The slope of the quasi-stationary front and the ground convergence are significant factors that determine the occurrence of continuous heavy precipitation. However, terrain also plays a role in affecting precipitation. For instance, it is impossible for a quasi-stationary front with a large slope to form continuous heavy precipitation in Chengdu due to its location in a basin. Although it is easy to form a quasi-stationary front in Guiyang, its characteristics make it less likely to form long-lasting strong convection weather. Therefore, it is crucial to keep an eye on weather updates released by authorities to avoid believing and spreading unreliable rumors.'
-      ],
-      images: [
-        { src: '文章/谣言.png', captionZh: '谣言内容原文', captionEn: 'The original rumor content' }
       ]
     },
   },
